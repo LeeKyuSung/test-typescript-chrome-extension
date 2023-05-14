@@ -19,6 +19,21 @@
 - 그래도 ts로 만들면, 디버깅할 일이 현저하게 줄어들지 않을까...?
 - 에러 디버깅 완료
 
+## How to create a Chrome extension with TypeScript
+
+- `npm init -y`
+- `npm install --save-dev webpack webpack-cli`
+- `npm install --save-dev copy-webpack-plugin`
+- `npm install --save-dev typescript ts-loader`
+- `npm install --save-dev @types/chrome`
+- create `tsconfig.json` on root
+- create `webpack/webpack.config.js`
+- add `build` script in `package.json`
+- create `public/manifest.json`
+- implement `src/background.ts`
+- `npm run build`
+  - use `dist` folder for chrome extension
+
 ## How to use
 
 - npm run build
